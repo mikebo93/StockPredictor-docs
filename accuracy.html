@@ -24,7 +24,14 @@
                   text-slate-500 hover:text-slate-900 hover:bg-slate-100
                   dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800
 ">
-        今日報告
+        美股
+      </a>
+      <a href="tw.html"
+         class="rounded-md px-2 py-1
+                  text-slate-500 hover:text-slate-900 hover:bg-slate-100
+                  dark:text-slate-400 dark:hover:text-slate-100 dark:hover:bg-slate-800
+">
+        台股
       </a>
       <a href="accuracy.html"
          class="rounded-md px-2 py-1
@@ -34,7 +41,7 @@
       </a>
     </div>
 
-    <a href="https://github.com/mikebo93/StockPredictor" target="_blank" rel="noopener"
+    <a href="https://github.com/mikebo93/StockPredictor-docs" target="_blank" rel="noopener"
        class="ml-auto text-xs text-slate-500 dark:text-slate-400 hover:underline">
       GitHub ↗
     </a>
@@ -54,22 +61,50 @@
     <p>⚠️ 本頁數字為 LLM 方向觀察的事後驗證，<strong>不代表未來準確率</strong>，也非投資建議。</p>
   </div>
 
-    <section class="rounded-lg border border-slate-200 bg-white p-6 text-center
-                    dark:border-slate-800 dark:bg-slate-900">
-      <p class="text-4xl font-bold text-slate-400 dark:text-slate-600">— %</p>
-      <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
-        尚無樣本。系統每天早上 06:00 產出新預測，隔日回填前日結果，<br>
-        約 1-2 週後會有穩定樣本可供判斷。
-      </p>
-    </section>
+
+  <section class="mb-6">
+    <h2 class="text-lg font-semibold mb-3 flex items-center gap-2">
+      <span class="inline-block w-1 h-5 bg-blue-600 rounded"></span>
+      美股（NVDA / SPY / ...）
+    </h2>
+          <section class="rounded-lg border border-slate-200 bg-white p-6 text-center
+                      dark:border-slate-800 dark:bg-slate-900">
+        <p class="text-4xl font-bold text-slate-400 dark:text-slate-600">— %</p>
+        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+          尚無樣本。系統每天早上 06:00 產出新預測，隔日回填前日結果，<br>
+          約 1-2 週後會有穩定樣本可供判斷。
+        </p>
+      </section>
+
+  </section>
+
+  <section class="mb-6">
+    <h2 class="text-lg font-semibold mb-3 flex items-center gap-2">
+      <span class="inline-block w-1 h-5 bg-emerald-600 rounded"></span>
+      台股（2330.TW / 0050 / 00981A / ...）
+    </h2>
+          <section class="rounded-lg border border-slate-200 bg-white p-6 text-center
+                      dark:border-slate-800 dark:bg-slate-900">
+        <p class="text-4xl font-bold text-slate-400 dark:text-slate-600">— %</p>
+        <p class="mt-2 text-sm text-slate-500 dark:text-slate-400">
+          尚無樣本。系統每天早上 06:00 產出新預測，隔日回填前日結果，<br>
+          約 1-2 週後會有穩定樣本可供判斷。
+        </p>
+      </section>
+
+    <p class="mt-2 text-xs text-slate-500 dark:text-slate-400">
+      台股預測期間：1 個台股交易日（T+1 收盤 vs T 收盤）；假日順延。
+    </p>
+  </section>
 
   <footer class="mt-8 border-t border-slate-200 dark:border-slate-800 pt-4 text-xs text-slate-500 dark:text-slate-400">
     <p>
-      <a class="underline hover:no-underline" href="index.html">← 回今日報告</a>
+      <a class="underline hover:no-underline" href="index.html">← 回今日美股報告</a>
+        · <a class="underline hover:no-underline" href="tw.html">台股報告 →</a>
     </p>
     <p class="mt-2">
-      生成時間：2026-04-22 22:07 ·
-      <a class="underline" href="https://github.com/mikebo93/StockPredictor" target="_blank" rel="noopener">美股每日新聞分析系統</a>
+      生成時間：2026-04-23 00:06 ·
+      <a class="underline" href="https://github.com/mikebo93/StockPredictor-docs" target="_blank" rel="noopener">美股每日新聞分析系統</a>
     </p>
   </footer>
 
