@@ -1,0 +1,72 @@
+/* Category filter chips — colours are Tailwind-sourced via utility classes
+ * appended at render time; this file holds only the state toggle. */
+
+.chip-cat { cursor: pointer; user-select: none; }
+
+.chip-cat-active {
+  background-color: rgb(30 41 59);     /* slate-800 */
+  color: rgb(255 255 255);
+}
+@media (prefers-color-scheme: dark) {
+  .chip-cat-active {
+    background-color: rgb(226 232 240); /* slate-200 */
+    color: rgb(15 23 42);               /* slate-900 */
+  }
+}
+
+.chip-cat-inactive {
+  background-color: rgb(226 232 240);  /* slate-200 */
+  color: rgb(51 65 85);                /* slate-700 */
+}
+@media (prefers-color-scheme: dark) {
+  .chip-cat-inactive {
+    background-color: rgb(30 41 59);   /* slate-800 */
+    color: rgb(203 213 225);           /* slate-300 */
+  }
+}
+
+.hidden-by-filter { display: none !important; }
+
+/* Ticker accordion: hide default disclosure triangle; rotate our own. */
+summary { list-style: none; }
+summary::-webkit-details-marker { display: none; }
+details[open] > summary .details-arrow { transform: rotate(90deg); }
+
+/* Filter chip states */
+.filter-chip {
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border: 1px solid transparent;
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.filter-chip-inactive {
+  background-color: rgb(241 245 249);   /* slate-100 */
+  color: rgb(51 65 85);                 /* slate-700 */
+  border-color: rgb(226 232 240);       /* slate-200 */
+}
+.filter-chip-inactive:hover {
+  background-color: rgb(226 232 240);   /* slate-200 */
+}
+.filter-chip-active {
+  background-color: rgb(30 58 138);     /* blue-900 */
+  color: rgb(255 255 255);
+  border-color: rgb(30 58 138);
+}
+@media (prefers-color-scheme: dark) {
+  .filter-chip-inactive {
+    background-color: rgb(30 41 59);    /* slate-800 */
+    color: rgb(203 213 225);            /* slate-300 */
+    border-color: rgb(51 65 85);        /* slate-700 */
+  }
+  .filter-chip-inactive:hover {
+    background-color: rgb(51 65 85);    /* slate-700 */
+  }
+  .filter-chip-active {
+    background-color: rgb(147 197 253); /* blue-300 */
+    color: rgb(15 23 42);               /* slate-900 */
+    border-color: rgb(147 197 253);
+  }
+}
