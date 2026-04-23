@@ -1,7 +1,7 @@
 {
   "market": "us",
   "window_days": 30,
-  "sample_size": 0,
-  "hit_rate": 0.0,
-  "low_sample": true
+  "sample_size": 223,
+  "hit_rate": 0.21524663677130046,
+  "low_sample": false
 }
